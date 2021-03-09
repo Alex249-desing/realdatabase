@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".compras">
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5px"
+            android:text="CODIGO"
+            android:textColor="#0F72EC" />
+
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5px"
+            android:ems="10"
+            android:hint="INGRESE CODIGO"
+            android:inputType="textPersonName"
+            android:textColorHint="#787878" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="5px"
+            android:text="NOMBRE DEL PRODUCTO"
+            android:textColor="#0F72EC"
+            android:textColorHint="#0F72EC" />
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:text="STOCK"
+            android:textColor="#0F72EC" />
+
+        <EditText
+            android:id="@+id/et5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5px"
+            android:ems="10"
+            android:hint="INGRESE CANTIDAD"
+            android:inputType="number"
+            android:textColorHint="#787878" />
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5px"
+            android:text="PRECIO COMPRA"
+            android:textColor="#0F72EC" />
+
+        <TextView
+            android:id="@+id/txt6"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="5px"
+            android:text="TOTAL A PAGAR"
+            android:textColor="#0F72EC" />
+
+        <TextView
+            android:id="@+id/txt8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5px"
+            android:text="TextView"
+            tools:visibility="invisible" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5px"
+            android:background="#000000"
+            android:onClick="total"
+            android:outlineAmbientShadowColor="#FFFFFF"
+            android:outlineSpotShadowColor="#FFFFFF"
+            android:shadowColor="#FFFFFF"
+            android:text="Total a pagar"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/Regresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5px"
+            android:background="#000000"
+            android:onClick="guardar"
+            android:text="Comprar"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5px"
+            android:background="#000000"
+            android:onClick="regresar"
+            android:text="REGRESAR"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5px"
+            android:background="#000000"
+            android:onClick="buscar"
+            android:text="Buscar"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
